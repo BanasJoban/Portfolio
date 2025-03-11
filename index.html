@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Google Fonts - Optional but makes the design nicer -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1 class="logo">Portfolio</h1>
+        <!-- Navigation Menu -->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <span class="toggle-icon">🌙</span>
+        </button>
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" aria-label="Open menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="title">
+            Hello, I'm <span class="highlight">Your Name</span>
+          </h2>
+          <h3 class="subtitle">Web Developer</h3>
+          <p class="description">
+            Welcome to my portfolio website. I build things for the web.
+          </p>
+          <a href="#contact" class="btn primary-btn">Contact Me</a>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder for profile image -->
+          <div class="profile-img-container">
+            <div class="profile-img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Hello! I'm a web developer passionate about creating interactive
+              and responsive websites. I enjoy turning complex problems into
+              simple, beautiful solutions.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring new technologies,
+              reading, or enjoying the outdoors.
+            </p>
+          </div>
+          <div class="skills">
+            <h3>My Skills</h3>
+            <div class="skill-bars">
+              <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-level" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="project-img"></div>
+            <div class="project-info">
+              <h3>Project One</h3>
+              <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="#" class="btn small-btn">View Project</a>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="project-img"></div>
+            <div class="project-info">
+              <h3>Project Two</h3>
+              <p>
+                An interactive web application with animations and user
+                interactions.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="#" class="btn small-btn">View Project</a>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-img"></div>
+            <div class="project-info">
+              <h3>Project Three</h3>
+              <p>
+                A portfolio website template with smooth scrolling and
+                animations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a href="#" class="btn small-btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Email</h3>
+              <p>example@email.com</p>
+            </div>
+            <div class="contact-item">
+              <h3>Location</h3>
+              <p>City, Country</p>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link">GitHub</a>
+              <a href="#" class="social-link">LinkedIn</a>
+              <a href="#" class="social-link">Twitter</a>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
